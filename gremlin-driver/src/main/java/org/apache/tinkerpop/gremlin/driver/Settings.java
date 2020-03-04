@@ -109,7 +109,6 @@ final class Settings {
         final Constructor constructor = new Constructor(Settings.class);
         final TypeDescription settingsDescription = new TypeDescription(Settings.class);
         settingsDescription.putListPropertyType("hosts", String.class);
-        settingsDescription.putListPropertyType("serializers", SerializerSettings.class);
         constructor.addTypeDescription(settingsDescription);
 
         final Yaml yaml = new Yaml(constructor);
